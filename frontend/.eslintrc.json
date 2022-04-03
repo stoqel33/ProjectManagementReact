@@ -37,11 +37,14 @@
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/prop-types": "off",
-        "max-len": ["warn", { "code": 100 }]
+        "max-len": ["warn", { "code": 150 }]
     },
     "settings": {
         "import/resolver": {
-            "typescript": {}
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"],
+                "moduleDirectory": ["node_modules", "src/"]
+            }
         }
     }
 }
