@@ -1,0 +1,7 @@
+export { router as auth } from './auth'
+export { router as user } from './user'
+export { router as client } from './client'
+export { router as invoice } from './invoice'
+export { router as project } from './project'
+export { router as subcontractor } from './subcontractor'
+export { router as employee } from './employee'
