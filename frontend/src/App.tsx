@@ -1,8 +1,8 @@
-import React, { Suspense, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Suspense, useEffect } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import i18next from 'i18next';
 
-import { Home } from 'pages/home';
+import { CreateRoutes } from './routes';
 
 export const App = () => {
     useEffect(() => {
@@ -14,9 +14,7 @@ export const App = () => {
     return (
         <Suspense fallback={null}>
             <Router>
-                <Routes>
-                    <Route path="/home" element={<Home />} />
-                </Routes>
+                <CreateRoutes />
             </Router>
         </Suspense>
     );
