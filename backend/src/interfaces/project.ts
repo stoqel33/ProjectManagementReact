@@ -20,7 +20,8 @@ export default interface IProject extends Document {
     taxRate: number
     netPrice: number
     createdDate: Date
-    deadline: Date
+    startDate: Date
+    plannedEndDate: Date
     category?: string
     subcontractorId?: Types.ObjectId
     picture?: string
