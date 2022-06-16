@@ -1,8 +1,7 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-export const Home = () => {
+export const NotFound = () => {
     const { t } = useTranslation(['common']);
 
-    return <h1>{t('Hello world')}</h1>;
+    return <h1>{t('Page not found')}</h1>;
 };
