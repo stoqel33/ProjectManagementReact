@@ -14,8 +14,9 @@
     },
     "plugins": ["react", "react-hooks", "@typescript-eslint"],
     "rules": {
-        "indent": ["error", 4],
+        "indent": "off",
         "react/jsx-indent": ["error", 4],
+        "react/jsx-indent-props": ["error", 4],
         "import/prefer-default-export": "off",
         "comma-dangle": ["error", "only-multiline"],
         "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
@@ -37,7 +38,12 @@
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/prop-types": "off",
-        "max-len": ["warn", { "code": 150 }]
+        "max-len": ["warn", { "code": 150 }],
+        "linebreak-style": ["error", "windows"],
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
+        "no-param-reassign": 0,
+        "operator-linebreak": 0
     },
     "settings": {
         "import/resolver": {
